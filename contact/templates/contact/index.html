@@ -2,6 +2,9 @@
 
 {% block content %}
 
+{% if contacts %}
+    
+
     <div class="reponsive-table">
         <table class="cibtacts-table">
             <caption class="table-caption">
@@ -53,6 +56,15 @@
 
             
     </div>
+{% else %}
+    <div class="single-contact">
+        <h1 class="single-contact-name">
+            Nenhum contato encontrado!
+        </h1>
+
+
+    </div>
+{% endif %}
 
 {% endblock content %}
 
